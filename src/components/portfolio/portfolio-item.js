@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 export default function(props) {
     return (
@@ -11,6 +12,8 @@ export default function(props) {
                 google.com        url
                 Ministry Safe      title
                 google.com */} 
+
+            <Link to={`/portfolio/${props.slug}`}>Link</Link>
         </div>
     )
 }
